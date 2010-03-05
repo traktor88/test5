@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-#
-# Copyright (c) 2010 Guilherme Gondim and contributors
-#
-# This file is part of Django Hashtags.
-#
-# Django Hashtags is free software under terms of the GNU Lesser
-# General Public License version 3 (LGPLv3) as published by the Free
-# Software Foundation. See the file README for copying conditions.
-
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes import generic
 from django.db import models
@@ -45,4 +35,4 @@ class HashtaggedItem(models.Model):
         verbose_name_plural = _('hashtagged items')
 
     def __unicode__(self):
-        return u'%s [%s]' % (self.content_object, self.hashtag)
+        return u'%s [%s]' % (self.object, self.hashtag)
