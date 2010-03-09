@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Copyright (c) 2010 Guilherme Gondim and contributors
 #
 # This file is part of Django Hashtags.
@@ -16,10 +14,6 @@ class HashtagAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 
 class HashtaggedItemAdmin(admin.ModelAdmin):
-    fieldsets = (
-        (None, {'fields': ('hashtag',)}),
-        ('Content object', {'fields': ('content_type', 'object_id')}),
-    )
     list_display = ('hashtag', 'content_type', 'object_id', 'content_object')
     list_filter = ('content_type',)
     search_fields = ('hashtag', 'content_type', 'object_id')
