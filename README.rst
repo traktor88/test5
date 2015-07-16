@@ -2,6 +2,8 @@
 Django Hashtags
 ===============
 
+*(django-hashtags is no longer supported!)*
+
 **Django Hashtags** is a generic application for `Django Web Framework`_ to
 help you publish content with hashtags (like twitter hashtags), in documents,
 or comments, or wherever.
